@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Home</h1>
+
+
+<div class="row">
+    <div class="col-sm-5">
+        <img src="img/map.png" class="img-thumbnail" />
+    </div>
+    <div class="col-sm-6">
+        <div class="well well-sm">
+            <p>We are coming to a city near you!</p>
+            <div id="events-online"></div>
+            <div id="events-offline">
+                <p>
+                    Give us a call at 888-555-1234 to get
+                    the latest event schedule.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+<script src="/scripts/home.js"></script>
+}

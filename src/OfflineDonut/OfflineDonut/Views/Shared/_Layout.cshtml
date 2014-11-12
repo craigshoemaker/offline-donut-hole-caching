@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html manifest="/manifest">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <script src="/scripts/modernizr-2.6.2.js"></script>
+    <link href="/scripts/offline/themes/offline-theme-chrome.css" rel="stylesheet" />
+    <link href="/scripts/offline/themes/offline-language-english.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <script src="/scripts/jquery.js"></script>
+    <script src="/scripts/bootstrap.js"></script>
+    <script src="/scripts/offline/offline.min.js"></script>
+    <script src="/scripts/offline-simulate-ui.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
